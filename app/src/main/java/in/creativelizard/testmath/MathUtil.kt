@@ -1,5 +1,7 @@
 package `in`.creativelizard.testmath
 
+import java.util.*
+
 class MathUtil {
 
         fun maxDiff(numbers: IntArray): Int {
