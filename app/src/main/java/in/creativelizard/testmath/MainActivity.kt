@@ -57,6 +57,10 @@ class MainActivity : AppCompatActivity() {
                 ans = zz.toString()
                 //Log.e("sh",Arrays.toString(k))
             }
+
+            if(mathUtil.isNumberInArray(k,ans.toInt()) ==0){
+                ans = "-2"
+            }
             tvDisplay.text = ans
 
         }

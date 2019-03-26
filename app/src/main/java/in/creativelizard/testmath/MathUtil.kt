@@ -1,5 +1,7 @@
 package `in`.creativelizard.testmath
 
+import java.util.*
+
 
 class MathUtil {
 
@@ -12,4 +14,7 @@ class MathUtil {
             return diff
         }
 
+    fun isNumberInArray(numbers: IntArray, number:Int) : Int{
+        return Arrays.binarySearch(numbers,number)
+    }
 }
