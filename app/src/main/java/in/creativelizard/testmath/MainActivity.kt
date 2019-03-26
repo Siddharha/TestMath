@@ -44,17 +44,19 @@ class MainActivity : AppCompatActivity() {
 
 
 
+            Arrays.sort(k)
             if((rgOperation.getChildAt(0) as RadioButton).isChecked){
-                Arrays.sort(k)
               ans = mathUtil.minDiff(k).toString()
             }else{
                 /*val ta = k.toTypedArray()
                 Arrays.sort(ta,Collections.reverseOrder())
                // Arrays.asList(ta).reverse()
                 Log.e("sh",Arrays.toString(ta))*/
-                ans = mathUtil.maxDiff(numberArray.toIntArray()).toString()
-            }
 
+                val zz = Math.abs(k[k.size-1] - k[0])
+                ans = zz.toString()
+                //Log.e("sh",Arrays.toString(k))
+            }
             tvDisplay.text = ans
 
         }
